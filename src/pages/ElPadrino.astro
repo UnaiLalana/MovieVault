@@ -1,0 +1,19 @@
+---
+import MovieLayout from '../layouts/MovieLayout.astro';
+import MovieCard from '../components/MovieCard.astro';
+---
+<MovieLayout
+backgroundImage='src/assets/elPadrino.png'
+dateLabel='El Padrino - 1972'>
+    <MovieCard
+    title="Joker"
+    poster="src/assets/elPadrino.png"
+    genres={["crime", "drama", "thriller"]}
+    rating={9.6}
+    director="Todd Phillips"
+    writers="Todd Phillips (Screenplay)"
+    stars="Joaquin Phoenix, Zazie Beetz"
+    releaseDate="4 October 2019"
+    releaseRegion="UK"
+    />
+</MovieLayout>
