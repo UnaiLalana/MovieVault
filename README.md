@@ -44,4 +44,5 @@ Want to suggest a new film or help expand the project?
 5. Open a pull request
 
 Feel free to open issues for feedback, improvements, or ideas 💡
+
 Let’s bring cinema closer to the people ❤️
