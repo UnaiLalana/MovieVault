@@ -3,7 +3,10 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: sans-serif;
-  outline: 2px solid red; /* Debug red line */
+}
+
+* {
+    outline: 2px solid red; /* Debug red line */
 }
 
 body {
