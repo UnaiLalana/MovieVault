@@ -1,16 +1,17 @@
 ---
 export interface Props {
   backgroundImage: string;
-  dateLabel: string;
+  name: string;
 }
 
-const { backgroundImage, dateLabel } = Astro.props;
+const { backgroundImage, name } = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Filmoteca</title>
+    <title>{name}</title>
+    <link rel="icon" type="image/png" href="${backgroundImage}" />
     <link rel="stylesheet" href="/styles/global.css">
   </head>
   <body>

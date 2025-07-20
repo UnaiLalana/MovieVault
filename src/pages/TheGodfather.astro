@@ -1,0 +1,19 @@
+---
+import MovieLayout from '../layouts/MovieLayout.astro';
+import MovieCard from '../components/MovieCard.astro';
+---
+<MovieLayout
+backgroundImage='src/assets/theGodfather.png'
+name='The Godfather - 1972'>
+    <MovieCard
+    title="The Godfather"
+    poster="src/assets/theGodfather.png"
+    genres={['Crime', 'Drama']}
+    rating={9.2}
+    director="Francis Ford Coppola"
+    writers="Mario Puzo, Francis Ford Coppola"
+    stars="Marlon Brando, Al Pacino, James Caan"
+    releaseDate="March 24, 1972"
+    releaseRegion="USA"
+    />
+</MovieLayout>

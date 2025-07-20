@@ -20,35 +20,37 @@ const {
   writers,
   stars,
   releaseDate,
-  releaseRegion = 'UK',
+  releaseRegion = 'USA',
 } = Astro.props;
 ---
 
-<div>
-  <div style="display: flex; flex-direction: column; align-items: center; text-align: center; padding-top: 150px">
-    <img style="border-radius: 25px; position: relative" src={poster} alt={`Poster of ${title}`} />
-    <div style="position: relative">
+<div style="display: flex; justify-content: center">
+  <div style="display: flex; position: absolute; flex-direction: column; align-items: center; text-align: center; padding-top: 150px">
+    <img style="border-radius: 25px;" src={poster} alt={`Poster of ${title}`} />
+    <div style="position: absolute; font-size: 40px; color: white; margin-top: 750px; font-weight: 900;">
       ⭐ {rating}
     </div>
   </div>
 
-  <div style="background-color: white; color: black; margin: 50px; font-size: 50px; border-radius: 25px; padding: 10px;">
-    <h2 style="text-align: center;">{title}</h2>
+  <div style="background-color: white; color: black; margin: 50px; font-size: 50px; border-radius: 25px; margin-top: 600px; padding-top: 350px">
+    <div style="padding: 20px">
+        <h2 style="text-align: center;">{title}</h2>
 
-    <div style="display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 1rem;">
-      {genres.map((genre) => (
-        <span>
-          {genre}
-        </span>
-      ))}
+        <div style="display: flex; justify-content: space-evenly ; margin-bottom: 1rem;">
+        {genres.map((genre) => (
+            <span>
+            {genre}
+            </span>
+        ))}
+        </div>
+
+        <p><strong>Director:</strong> {director}</p>
+        <p><strong>Writers:</strong> {writers}</p>
+        <p><strong>Stars:</strong> {stars}</p>
+
+        <p>
+        Release Date: {releaseDate} ({releaseRegion})
+        </p>
     </div>
-
-    <p><strong>Director:</strong> {director}</p>
-    <p><strong>Writers:</strong> {writers}</p>
-    <p><strong>Stars:</strong> {stars}</p>
-
-    <p>
-      Release Date: {releaseDate} ({releaseRegion})
-    </p>
   </div>
 </div>
