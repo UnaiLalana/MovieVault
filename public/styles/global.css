@@ -4,9 +4,10 @@ html, body {
   height: 100%;
   font-family: sans-serif;
 }
-
+/*
 * {
-}
+    outline: 2px solid red;
+}*/
 
 body {
   position: relative;
@@ -27,4 +28,54 @@ body {
   filter: blur(12px) brightness(0.4);
   z-index: -1;
 }
+
+.mejs__container {
+  background-color: white !important;
+  border-radius: 10px !important;
+  color: black !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.mejs__controls {
+  background: white !important;
+  color: black !important;
+  border-top: 1px solid #ccc !important;
+}
+
+.mejs__time-current {
+  background: #1db954 !important;
+}
+
+.mejs__time-total {
+  background: #ccc !important;
+}
+
+.mejs__time {
+  color: black !important;
+}
+
+.mejs__horizontal-volume-slider .mejs__horizontal-volume-current {
+  background: #1db954 !important;
+}
+.mejs__button > button {
+  background-color: transparent !important;
+  background-image: none !important;
+  filter: none !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.mejs__button > button {
+  color: black !important;
+}
+
+.mejs__playpause-button > button::before {
+  content: '►';
+  font-size: 20px;
+  color: black;
+}
+
+
 
