@@ -187,6 +187,40 @@ import Layout from '../layouts/Layout.astro';
       />
     </a>
 
+    <a
+      href="/Terminator"
+      style="
+        flex-shrink: 0;
+        width: 180px;
+        scroll-snap-align: start;
+        text-align: center;
+        text-decoration: none;
+        color: #2563eb;
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      "
+      onmouseover="this.style.transform='scale(1.05)'"
+      onmouseout="this.style.transform='scale(1)'"
+    >
+      <img
+        src="/posters/Terminator.png"
+        alt="Terminator"
+        style="
+          width: 180px;
+          height: 270px;
+          object-fit: cover;
+          border-radius: 16px;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+          margin-bottom: 12px;
+          flex-shrink: 0;
+        "
+      />
+    </a>
+
 
     <!-- More movies can be added here in the same pattern -->
   </div>

@@ -1,0 +1,22 @@
+---
+import MovieLayout from '../layouts/MovieLayout.astro';
+import MovieCard from '../components/MovieCard.astro';
+---
+<MovieLayout
+backgroundImage='/posters/Terminator.png'
+name='Terminator - 1984'>
+    <MovieCard
+    title="The Terminator"
+    poster="/posters/Terminator.png"
+    genres={['Action', 'Sci-Fi']}
+    rating={8.1}
+    director="James Cameron"
+    writers="James Cameron, Gale Anne Hurd"
+    stars="Arnold Schwarzenegger, Linda Hamilton, Michael Biehn"
+    releaseDate="October 26, 1984"
+    releaseRegion="USA"
+    description="A cyborg assassin is sent back in time to kill the mother of the future leader of a human resistance movement against machines."
+    location="Los Angeles, California"
+    soundtrack="/audio/Terminator.mp3"
+    />
+</MovieLayout>
