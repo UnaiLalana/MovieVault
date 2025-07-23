@@ -3,11 +3,11 @@ import MovieLayout from '../layouts/MovieLayout.astro';
 import MovieCard from '../components/MovieCard.astro';
 ---
 <MovieLayout
-backgroundImage='src/assets/theGodfather.png'
+backgroundImage='/posters/TheGodfather.png'
 name='The Godfather - 1972'>
     <MovieCard
     title="The Godfather"
-    poster="src/assets/theGodfather.png"
+    poster="/posters/TheGodfather.png"
     genres={['Crime', 'Drama']}
     rating={9.2}
     director="Francis Ford Coppola"
@@ -17,6 +17,6 @@ name='The Godfather - 1972'>
     releaseRegion="USA"
     description="The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
     location="Central Park"
-    soundtrack="/audio/theGodfather.mp3"
+    soundtrack="/audio/TheGodfather.mp3"
     />
 </MovieLayout>

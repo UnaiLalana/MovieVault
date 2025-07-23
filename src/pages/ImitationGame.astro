@@ -1,0 +1,22 @@
+---
+import MovieLayout from '../layouts/MovieLayout.astro';
+import MovieCard from '../components/MovieCard.astro';
+---
+<MovieLayout
+backgroundImage='/posters/ImitationGame.png'
+name='Imitation Game - 2014'>
+    <MovieCard
+    title="The Imitation Game"
+    poster="/posters/ImitationGame.png"
+    genres={['Biography', 'Drama', 'Thriller']}
+    rating={8.0}
+    director="Morten Tyldum"
+    writers="Graham Moore"
+    stars="Benedict Cumberbatch, Keira Knightley, Matthew Goode"
+    releaseDate="November 28, 2014"
+    releaseRegion="UK"
+    description="During World War II, mathematician Alan Turing tries to crack the German Enigma code while being hidden by the British government."
+    location="Bletchley Park"
+    soundtrack="/audio/ImitationGame.mp3"
+    />
+</MovieLayout>

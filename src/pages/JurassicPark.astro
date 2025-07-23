@@ -1,0 +1,22 @@
+---
+import MovieLayout from '../layouts/MovieLayout.astro';
+import MovieCard from '../components/MovieCard.astro';
+---
+<MovieLayout
+backgroundImage='/posters/JurassicPark.png'
+name='Jurassic Park - 1993'>
+    <MovieCard
+    title="Jurassic Park"
+    poster="/posters/JurassicPark.png"
+    genres={['Adventure', 'Sci-Fi', 'Thriller']}
+    rating={8.1}
+    director="Steven Spielberg"
+    writers="Michael Crichton, David Koepp"
+    stars="Sam Neill, Laura Dern, Jeff Goldblum"
+    releaseDate="June 11, 1993"
+    releaseRegion="USA"
+    description="During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok."
+    location="Times Square"
+    soundtrack="/audio/JurassicPark.mp3"
+    />
+</MovieLayout>

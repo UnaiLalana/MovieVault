@@ -1,0 +1,22 @@
+---
+import MovieLayout from '../layouts/MovieLayout.astro';
+import MovieCard from '../components/MovieCard.astro';
+---
+<MovieLayout
+backgroundImage='/posters/StarWars.png'
+name='Star Wars - 1977'>
+    <MovieCard
+    title="Star Wars: Episode IV - A New Hope"
+    poster="/posters/StarWars.png"
+    genres={['Action', 'Adventure', 'Fantasy']}
+    rating={8.6}
+    director="George Lucas"
+    writers="George Lucas"
+    stars="Mark Hamill, Harrison Ford, Carrie Fisher"
+    releaseDate="May 25, 1977"
+    releaseRegion="USA"
+    description="Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader."
+    location="Liberty Island"
+    soundtrack="/audio/StarWars.mp3"
+    />
+</MovieLayout>

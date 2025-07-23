@@ -21,8 +21,8 @@ const { backgroundImage, name } = Astro.props;
     ></div>
 
     <div class="button_back">
-      <a href="/" style="text-decoration: none; color: #ffffff;">
-        ↩
+      <a href="/" style="text-decoration: none;">
+        <img src="/icons/arrow.svg" style="transform: rotate(180deg); width: 100px; height: 80px; margin: 7vw"/>
       </a>
     </div>
     <div></div>
@@ -32,9 +32,6 @@ const { backgroundImage, name } = Astro.props;
 <style>
   .button_back {
     position: absolute;
-    top: 60px;
-    left: 60px;
-    font-size: 10vw;
     font-weight: bold;
     transition: transform 0.2s ease;
   }

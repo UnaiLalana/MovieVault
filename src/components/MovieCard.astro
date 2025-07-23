@@ -32,9 +32,10 @@ const {
 
 <div style="display: flex; justify-content: center;">
   <div style="display: flex; position: absolute; flex-direction: column; align-items: center; text-align: center; padding-top: 250px;">
-    <img style="border-radius: 25px; max-width: 570px; max-height: 806px;" src={poster} alt={`Poster of ${title}`} />
-    <div style="position: absolute; font-size: 40px; color: white; margin-top: 725px; font-weight: 900; margin-right: 400px; white-space: nowrap;">
-      ⭐ {rating}
+    <img style="border-radius: 25px; width: 570px; height: 806px; object-fit: cover" src={poster} alt={`Poster of ${title}`} />
+    <div style="position: absolute; font-size: 40px; color: white; margin-top: 725px; font-weight: 900; margin-right: 400px; white-space: nowrap; background-color: rgba(112, 112, 112, 0.3);
+  backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);border-radius: 8px; padding-right: 20px; text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);">
+      ⭐{rating.toFixed(1)} 
     </div>
   </div>
 
