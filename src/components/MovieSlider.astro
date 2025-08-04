@@ -1,0 +1,27 @@
+---
+import MovieItem from "./MovieItem.astro";
+---
+
+<div
+    style="
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 24px 20px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      background-color: #f8fafc;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+      margin: 20px;
+    "
+  >
+    <MovieItem title="TheGodfather"/>
+    <MovieItem title="ImitationGame"/>
+    <MovieItem title="StarWars"/>
+    <MovieItem title="Terminator"/>
+    <MovieItem title="JurassicPark"/>
+    <MovieItem title="TLOTR"/>
+
+    <!-- More movies can be added here in the same pattern -->
+  </div>
